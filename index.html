@@ -22,15 +22,15 @@
                 <tr>
 
                 <th>Área (m²)</th>
-                <td><input type="number" id="area1" value="92" oninput="calcular()"></td>
-                <td><input type="number" id="area2" value="47" oninput="calcular()"></td>
-                <td><input type="number" id="area3" value="72" oninput="calcular()"></td>
+                <td><input type="number" id="area1" value="" oninput="calcular()"></td>
+                <td><input type="number" id="area2" value="" oninput="calcular()"></td>
+                <td><input type="number" id="area3" value="" oninput="calcular()"></td>
                 </tr>
 
                 <th>Valor Anunciado (R$)</th>
-                <td><input type="number" id="valor1" value="315000" oninput="calcular()"></td>
-                <td><input type="number" id="valor2" value="200000" oninput="calcular()"></td>
-                <td><input type="number" id="valor3" value="310000" oninput="calcular()"></td>
+                <td><input type="number" id="valor1" value="" oninput="calcular()"></td>
+                <td><input type="number" id="valor2" value="" oninput="calcular()"></td>
+                <td><input type="number" id="valor3" value="" oninput="calcular()"></td>
                 </tr>
 
                 <th>Valor por m²</th>
@@ -41,7 +41,42 @@
             </tbody>
          </table>
 
+        <!-- MÉDIA E CÁLCULO -->
+        <h5 class="mt-4">Cálculo com base na média</h5>
+        <table class="table table-bordered text-center">
+            <tr>
+                <th>Média dos m²</th>
+                <td id="mediaM2">-</td>
+            </tr>
+            <tr>
+                <th>Regateio (-10%)</th>
+                <td id="regateioM2">-</td>
+            </tr>
+        </table>
 
+        <!-- AVALIAÇÃO FINAL -->
+         <h5 class="mt-4">Avaliação do Seu Imóvel</h5>
+         <table class="table table-bordered text-center">
+            <tr>
+                <th>Área do seu imóvel (m²)</th>
+                <td><input type="number" id="areaFinal" value="" oninput="calcular()"></td>
+            </tr>
+
+            <tr>
+                <th>Valor do m² (com regateio)</th>
+                <td id="valorFinalM2">-</td>
+            </tr>
+
+            <tr class="highlight">
+                <th>Valor estimado do imóvel</th>
+                <td id="valorFinal">-</td>
+            </tr>
+         </table>
+
+         <!-- Botão de limpar -->
+          <div class="text-center">
+            <button class="btn btn-danger mt-3" onclick="limparCampos()">Limpar Campos</button>
+          </div>
     </div>
     
 </body>
