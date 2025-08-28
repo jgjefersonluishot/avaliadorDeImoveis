@@ -1,1 +1,52 @@
-Avaliador de imóveis.
+# 🏡 Avaliação de Imóveis com Base no Mercado Imobiliário
+
+Este projeto tem como objetivo **avaliar o valor de um imóvel** com base na comparação de outros imóveis do mercado.  
+A aplicação permite inserir dados de até **3 imóveis comparativos**, calcular o valor médio do metro quadrado, aplicar um desconto de **10% (regateio)** e estimar o valor de um imóvel próprio.
+
+---
+
+## 📸 Layout da Tela
+![Preview do Projeto](./screenshot.png)  
+*(Exemplo de interface da aplicação)*
+
+---
+
+## ⚙️ Funcionalidades
+
+- Inserir **área (m²)** e **valor anunciado (R$)** de até **3 imóveis comparativos**.
+- Cálculo automático do **valor por m²** de cada imóvel.
+- Exibição da **média do valor do m²**.
+- Aplicação de **regateio (-10%)** sobre a média.
+- Inserção da **área do imóvel do usuário** para calcular:
+  - Valor do m² (com regateio).
+  - Valor estimado do imóvel.
+- Botão para **limpar todos os campos**.
+
+---
+
+## 📊 Fórmulas Utilizadas
+
+- **Valor por m² (cada imóvel):**
+
+- **Média dos valores por m²:**
+
+- **Regateio (-10%):**
+
+- **Valor estimado do imóvel:**
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (puro)**
+
+    📝 Melhorias Futuras
+
+✅ Salvar imóveis comparativos em LocalStorage.
+
+✅ Permitir exportar relatório em PDF/Excel.
+
+✅ Tornar responsivo para mobile.
+
+✅ Integração com API de anúncios imobiliários.
