@@ -116,9 +116,15 @@
         }
 
         function limparCampos(){
-            
-        }
-
+            // Zera inputs
+            ['area1','area2','area3','valor1', 'valor2','valor3','areaFinal'].forEach(id=>{
+                document.getElementById(id).value = '';            
+            });
+            // Limpar resultados
+            ['m2_1','m2-2','m2_3','mediaM2','regateioM2','valorFinalM2','valorFinal'].forEach(id => {
+                document.getElementById(id).innerText='-';
+            });
+    }
 
     </script>
     
